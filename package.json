@@ -1,7 +1,7 @@
 {
   "name": "flloyd-portfolio",
   "version": "0.1.0",
-  "homepage": "https://flloyddsouza.github.io/flloyd-portfolio",
+  "homepage": "https://flloyddsouza.github.io/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
