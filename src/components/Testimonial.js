@@ -1,23 +1,10 @@
-import SwiperCore from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from 'swiper/modules';
-
-SwiperCore.use([Pagination, Navigation]);
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 const Testimonial = () => {
-  const props = {
-    slidesPerView: 1,
-    loop: true,
-    pagination: false,
-    navigation: {
-      prevEl: ".prev_button",
-      nextEl: ".next_button",
-    },
-  };
   return (
     <div className="aali_tm_section" id="testimonial">
       <div className="aali_tm_testimonials">
         <div className="left">
-          
         </div>
         <div className="right">
           <div className="right_in">
@@ -29,8 +16,18 @@ const Testimonial = () => {
               <span>Testimonial</span>
               <h3>What People Say</h3>
             </div>
-            <Swiper {...props} className="owl-carousel">
-              
+            <Swiper
+              modules={[Navigation]}
+              slidesPerView={1}
+              loop={true}
+              pagination={false}
+              navigation={{
+                prevEl: ".prev_button",
+                nextEl: ".next_button",
+              }}
+              onSlideChange={() => console.log('slide change')}
+              onSwiper={(swiper) => console.log(swiper)}
+            >
               <SwiperSlide className="item">
                 <div className="text">
                   <p style={{fontSize: '16px', marginBottom: '16px'}}>
@@ -49,7 +46,6 @@ const Testimonial = () => {
                   </h3>
                 </div>
               </SwiperSlide>
-
               <SwiperSlide className="item">
                 <div className="text">
                   <p style={{fontSize: '16px', marginBottom: '16px'}}>
@@ -65,7 +61,6 @@ const Testimonial = () => {
                   </h3>
                 </div>
               </SwiperSlide>
-
             </Swiper>
             <div className="direct">
               <a className="prev_button">

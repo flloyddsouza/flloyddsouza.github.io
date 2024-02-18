@@ -16,24 +16,18 @@ import "../src/styles/globals.css"
 function App() {
   return (
     <div>
-      
-    <Layout>
-      <Home />
-      <About />
-      
-      {/* <Skills /> ToDo */}
-      
-      {/* <Portfolio /> Not Working */}
-      
-      {/* <Service /> ToDo */}
-      <Resume />
-
-      <Testimonial /> 
-
-      {/* <Blog /> ToDo */} 
-      <Counter />
-      <Contact />   
-    </Layout>
+      <Layout>
+        <Home />
+        <About />
+        {/* <Skills /> ToDo */}
+        {/* <Portfolio /> Not Working */}
+        {/* <Service /> ToDo */}
+        <Resume />
+        <Testimonial /> 
+        {/* <Blog /> ToDo */} 
+        <Counter />
+        <Contact />   
+      </Layout>
     </div>
    
   );
