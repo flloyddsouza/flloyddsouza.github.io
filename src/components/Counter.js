@@ -65,7 +65,7 @@ const Counter = () => {
                       <h3>
                         Happy
                         <br />
-                        Clients
+                        Users
                       </h3>
                     </div>
                   </div>
